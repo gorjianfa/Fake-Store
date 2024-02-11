@@ -9,7 +9,7 @@ import laptop5 from "../assets/image/5.webp";
 import laptop6 from "../assets/image/6.webp";
 import laptop7 from "../assets/image/7.webp";
 import laptop8 from "../assets/image/8.webp";
-import laptop9 from "../assets/image/9.webp";
+import laptop9 from "../assets/image/4.webp";
 
 
 
@@ -76,9 +76,9 @@ const initialList = [
   ];
 const App = () => {
     const getOut =()=>{
-        fetch('https://fakestoreapi.com/products')
-        .then(res=>res.json())
-        .then(json=>console.log(json))
+      fetch('https://fakestoreapi.com/products')
+      .then(res=>res.json())
+      .then(json=>console.log(json))
     }
 
 
@@ -93,11 +93,11 @@ const App = () => {
     }
   
     return (
-      <div className="flex-coulmn  bg-items">
+      <div className="flex-coulmn   bg-items max-width pt-3 ">
         {list.map(function(item)  {
             return(
           
-            <div className='card w-50 d-flex justify-content-center m-1 p-3 ' onClick={getOut}>
+            <div className='card w-75  margin-l  margin-b p-3 ' onClick={getOut}>
           <div className='d-flex flex-column '>
             <img src={item.img}  className='img d-flex justify-content-center'/>
           <span className='h5'>{item.title}</span>

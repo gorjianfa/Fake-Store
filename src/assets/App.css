@@ -40,13 +40,31 @@
 .flex-coulmn{
   display:grid;
   flex-direction: column;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .bg-items{
 
   background-color:#dcfce7;
+  height:auto;
 }
 .img{
   width:100%;
   max-width:600px;
+}
+.max-width{
+  width:100%;
+  max-width:1400px;
+}
+.bg-sidebar{
+background-color:#e9d5ff
+;
+}
+.margin-l{
+  margin-left:3.5rem;
+}
+.margin-b{
+  margin-bottom:1rem;
+}
+.text-color{
+  color: rgb(76 29 149);
 }
