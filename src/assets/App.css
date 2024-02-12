@@ -68,3 +68,9 @@ background-color:#e9d5ff
 .text-color{
   color: rgb(76 29 149);
 }
+.ellipsis { 
+	overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+} 
+ 
